@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Divyansh Srivastav — Software Engineer / Backend Engineer</title>
+<meta name="description" content="Portfolio of Divyansh Srivastav, Software Engineer / Backend Engineer — projects, skills, and experience." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Hyperspace canvas background -->
+<canvas id="warp-canvas"></canvas>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo">DS<span class="dot">.</span></a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="assets/resume.pdf" class="nav__resume" download>Resume ↓</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+  <a href="assets/resume.pdf" download>Download Resume</a>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <p class="hero__eyebrow">// open to full-time SDE roles · graduated July 2026 · immediate joiner</p>
+    <h1 class="hero__title">
+      Divyansh Srivastav
+    </h1>
+    <p class="hero__role">Software Engineer / Backend Engineer</p>
+    <p class="hero__desc">
+      I build concurrent backend systems that hold up under load — matching engines,
+      rate limiters, and AI-driven infra. Merged contributor to Docker's open-source
+      codebase. Looking for a backend or infra team that ships fast and cares about
+      correctness.
+    </p>
+    <div class="hero__cta">
+      <a href="#projects" class="btn btn--primary">Projects</a>
+      <a href="https://leetcode.com/Divyansh_Srivastav" class="btn btn--primary" target="_blank" rel="noopener">LeetCode</a>
+      <a href="https://github.com/Divyansh670" class="btn  btn--primary" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://drive.google.com/file/d/1dtz_OO-BnEk4AfRA7r5hcm6xtra8f23A/view?usp=sharing" class="btn  btn--primary" >Resume</a>
+       <a href="#contact" class="btn btn--primary">Contact</a>
+    </div>
+    <a href="#highlights" class="scroll-cue" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="section section--highlights" id="highlights">
+    <div class="achievements__grid">
+      <div class="achievement-card achievement-card--stat">
+        <span class="achievement-card__num">476+</span>
+        <p>LeetCode problems solved (134 Easy · 285 Medium · 57 Hard)</p>
+      </div>
+      <div class="achievement-card achievement-card--stat">
+        <span class="achievement-card__num">1500+</span>
+        <p>Max LeetCode contest rating</p>
+      </div>
+      <div class="achievement-card">
+  <h3>Open Source Contribution</h3>
+  <p>
+    Merged Windows path-expansion bug fix into Docker's docker-agent, PR #3088.
+  </p>
+</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <p class="section__eyebrow">About</p>
+      <h2 class="section__title">Who I am</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__text">
+        <p>
+          I'm an Information Technology graduate from KIET Group of Institutions
+          (AKTU), most interested in the parts of backend engineering that fail under
+          concurrency — race conditions, rate limiting, and systems that have to stay
+          correct while staying fast. I've built an order-matching engine that handles
+          partial fills under load, and a volatility-aware rate limiter that tightens
+          itself in real time when traffic gets unstable.
+        </p>
+        <p>
+          Earlier this year I got a fix merged into Docker's own codebase — a
+          Windows path-expansion bug in <code>docker-agent</code> — and I try to keep
+          contributing upstream where I can. Outside of that: 476+ LeetCode problems
+          solved, an IEEE-published paper on ML-based heart disease detection, and an
+          AWS Cloud Practitioner cert.
+        </p>
+      </div>
+      <div class="about__facts">
+        <div class="fact">
+          <span class="fact__label">Based in</span>
+          <span class="fact__value">Ghaziabad, India</span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Education</span>
+          <span class="fact__value">B.Tech IT, KIET Group of Institutions (AKTU) — CGPA 7.89/10.0, 2022–2026</span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Open to</span>
+          <span class="fact__value">Immediate Joiner · Full-time SDE · Backend / Infra · Remote or Relocation</span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Currently</span>
+          <span class="fact__value">Open Source Contributor @ Docker</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section__head">
+      <p class="section__eyebrow">Skills</p>
+      <h2 class="section__title">What I work with</h2>
+    </div>
+    <div class="skills__grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Go</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Backend &amp; Data</h3>
+        <div class="tags">
+          <span class="tag">Spring Boot</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Kafka</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">React</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud &amp; Tools</h3>
+        <div class="tags">
+          <span class="tag">Docker</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Git</span>
+          <span class="tag">DSA</span>
+          <span class="tag">LLD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <p class="section__eyebrow">Projects</p>
+      <h2 class="section__title">Selected work</h2>
+    </div>
+    <div class="projects__grid">
+
+      <!-- OPSMIND AI -->
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">AI / DevOps</span>
+          <div class="project-card__links">
+            <a href="https://github.com/Divyansh670" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://opsmind-frontend.onrender.com" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </div>
+        <h3>OpsMind AI — DevOps AI Gatekeeper</h3>
+        <ul class="project-bullets">
+          <li>Autonomous PR-review system running 3 concurrent AI agents (Security, Cost, Architecture) via GitHub webhooks &amp; CI</li>
+          <li>Security Sentinel scans diffs for hardcoded secrets &amp; CWE-tagged vulnerabilities with remediation snippets</li>
+          <li>Cost Predictor estimates real USD/month cloud cost impact from Terraform/CloudFormation changes</li>
+          <li>Architecture Supervisor checks code against custom rules via pgvector semantic similarity search</li>
+          <li>RAG chatbot with SSE streaming, answers questions about findings using hybrid pgvector + full-text search</li>
+          <li>Fully containerized, CI-tested, deployed free on Render + Neon — $0/month</li>
+        </ul>
+        <div class="tags tags--sm">
+          <span class="tag">Go</span>
+          <span class="tag">React</span>
+          <span class="tag">pgvector</span>
+          <span class="tag">CI/CD</span>
+        </div>
+
+        <details class="project-more">
+          <summary>More information</summary>
+          <div class="project-more__content">
+            <p>
+              Engineering teams merge code every day without knowing the full blast
+              radius of what they're shipping — a leaked API key, a silent $15k/month
+              AWS bill increase, or a repository-pattern violation that becomes a
+              technical debt time bomb. OpsMind AI acts as an always-on automated
+              senior reviewer that intercepts every pull request before it merges.
+            </p>
+            <p><strong>What makes it different:</strong></p>
+            <ul>
+              <li>Three concurrent AI agents (not one) — security, cost, and architecture reasoned about independently via goroutines, full context each</li>
+              <li>Self-improving via an MLOps feedback loop — engineer overrides are logged and inform future runs; architecture rules are defined in plain English, embedded via Gemini, matched via pgvector semantic search</li>
+              <li>Interactive RAG chatbot — ask "what security issues exist in admin.go?" and get streamed, source-cited answers</li>
+              <li>Runs entirely on free tiers — Go backend, PostgreSQL + pgvector on Neon, React dashboard on Render — $0/month, no expiring resources</li>
+            </ul>
+            <p><strong>Stack:</strong> Go (concurrent backend) · PostgreSQL + pgvector on Neon · Groq (GPT-OSS 120B) for agents/RAG · Gemini embedding-001 for vectors · React + TypeScript (Vite) · Docker · GitHub Actions CI · Render hosting</p>
+            <p><strong>Status:</strong> Live in production, verified end-to-end on a real GitHub repository, with a 10-test Go test suite and a full CI pipeline on every push. The backend is on Render's free tier, so it may take 30–60s to wake up after inactivity.</p>
+            <img src="assets/opsmind-dashboard.png" alt="OpsMind AI dashboard showing critical open flaws, monthly cost drift, and pipeline pass rate" class="project-more__img" loading="lazy" />
+          </div>
+        </details>
+      </article>
+
+      <!-- TRADING ENGINE -->
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">Backend / Fintech</span>
+          <div class="project-card__links">
+            <a href="https://github.com/Divyansh670" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <h3>Adaptive Rate-Limiting Trading Engine</h3>
+        <ul class="project-bullets">
+          <li>In-memory order-matching engine (ConcurrentSkipListMap) enforcing price-time priority with partial fills</li>
+          <li>Adaptive tiered rate limiting — Redis token bucket for retail clients, sliding window log for market-makers</li>
+          <li>Limits auto-tighten under a live volatility signal computed from a rolling window of recent trade prices</li>
+          <li>Full CLOSED → OPEN → HALF_OPEN circuit breaker around a simulated downstream dependency</li>
+          <li>Every matched trade streamed to Kafka/Redpanda, decoupling the matching engine's hot path from downstream processing</li>
+          <li>~91ms average end-to-end latency; verified 0 over-fills under 10-thread concurrent stress testing</li>
+        </ul>
+        <div class="tags tags--sm">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Kafka</span>
+        </div>
+
+        <details class="project-more">
+          <summary>More information</summary>
+          <div class="project-more__content">
+            <p>
+              Most "trading" portfolio projects stop at a gatekeeper — validate a
+              request, check a balance, forward it along. This project implements an
+              actual order-matching engine, the component that sits at the heart of
+              every real exchange (NYSE, NASDAQ, NSE): incoming buy/sell orders are
+              matched in real time, enforcing price-time priority and handling partial
+              fills, with a live order book kept entirely in memory for sub-millisecond
+              access.
+            </p>
+            <p><strong>What's unique:</strong></p>
+            <ul>
+              <li>A real matching algorithm — TreeMap-based order book (ConcurrentSkipListMap) with O(log n) insertion, O(1) best-price lookup, FIFO queues per price level. Caught and fixed a genuine stale-price-level bug via testing, now covered by a permanent regression test</li>
+              <li>Strategy-pattern adaptive rate limiting, tiered by client type, tightening automatically under detected volatility — no manual intervention</li>
+              <li>A genuine circuit breaker — full state machine, verified to trip, reject fast, and self-test recovery</li>
+              <li>Time-in-Force semantics (GTC/IOC/FOK), a min-heap expiry scheduler, and a full order lifecycle state machine</li>
+            </ul>
+            <p><strong>Stack:</strong> Java 21 + Spring Boot 4.1 · PostgreSQL 16 (Flyway migrations) · Redis 7.2 · Redpanda (Kafka-compatible) · Docker Compose — 100% free and runs entirely locally, no cloud cost</p>
+            <p>
+              <strong>Load testing:</strong> 69 orders processed, 40 trades matched, 0
+              errors across concurrent test runs. Honest caveat: most of the ~91ms
+              latency is synchronous DB writes and the Kafka publish call, not the
+              in-memory matching itself — moving trade persistence fully onto the async
+              Kafka consumer path is the natural next optimization.
+            </p>
+          </div>
+        </details>
+      </article>
+
+      <!-- CRYPTOTRACK -->
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">Full-stack</span>
+          <div class="project-card__links">
+            <a href="https://github.com/Divyansh670/Crypto_Tracker" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://crypto-tracker-umber-ten.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </div>
+        <h3>CryptoTrack — Portfolio Manager</h3>
+        <ul class="project-bullets">
+          <li>Real-time tracking of top cryptocurrencies via the CoinGecko API</li>
+          <li>Portfolio management with live profit/loss calculation and CSV export</li>
+          <li>Interactive charts (Recharts) for portfolio insights, plus a watchlist for favorites</li>
+          <li>JWT-based authentication, MongoDB Atlas-backed data</li>
+          <li>Search and filtering across coins, fully responsive dark-themed UI</li>
+        </ul>
+        <div class="tags tags--sm">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">MongoDB</span>
+        </div>
+
+        <details class="project-more">
+          <summary>More information</summary>
+          <div class="project-more__content">
+            <p>
+              A modern, real-time cryptocurrency tracking and portfolio management app
+              built solo during my SDE internship at Ultimez Technologies.
+            </p>
+            <p><strong>Frontend:</strong> React 18 + TypeScript, Tailwind CSS, Recharts, React Router, Axios, Lucide React</p>
+            <p><strong>Backend:</strong> Node.js + Express, MongoDB Atlas + Mongoose, JWT auth, bcryptjs for password security</p>
+            <p><strong>API:</strong> CoinGecko API for live market data</p>
+          </div>
+        </details>
+      </article>
+
+      <!-- CLI LOGIN SYSTEM -->
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">Security / CLI</span>
+          <div class="project-card__links">
+            <a href="https://github.com/Divyansh670/cli-login-system" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <h3>CLI Login System with TOTP-Based 2FA</h3>
+        <ul class="project-bullets">
+          <li>Secure CLI authentication system in Go with bcrypt-hashed passwords</li>
+          <li>Optional TOTP-based 2FA (RFC 6238), compatible with Google Authenticator</li>
+          <li>Account lockout after 5 failed attempts (15-minute lock), enforced before password comparison</li>
+          <li>Session management with configurable timeout, auto-logout on expiry</li>
+          <li>Fully containerized with Docker Compose, persistent SQLite storage via a named volume</li>
+        </ul>
+        <div class="tags tags--sm">
+          <span class="tag">Go</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Docker</span>
+          <span class="tag">bcrypt</span>
+        </div>
+
+        <details class="project-more">
+          <summary>More information</summary>
+          <div class="project-more__content">
+            <p><strong>Security design:</strong></p>
+            <ul>
+              <li>Passwords hashed with bcrypt (unique salt auto-generated, deliberately slow to resist brute-force)</li>
+              <li>Lockout status checked before password comparison — a locked account never leaks whether a subsequent attempt would have been correct</li>
+              <li>TOTP secret only activates after the user confirms one valid code, preventing accidental lockout from a mistyped secret</li>
+              <li>All queries parameterized (no SQL injection); username uniqueness enforced at the database level</li>
+            </ul>
+            <p>
+              Kept intentionally to three Go source files, each with a single clear
+              responsibility. Dependencies are vendored so the Docker build never
+              depends on network access to Go's module proxy — fully self-contained and
+              reproducible. Uses a pure-Go SQLite driver (no CGO), and a multi-stage
+              Docker build keeps the final runtime image small.
+            </p>
+            <p><strong>Stack:</strong> Go · SQLite (modernc.org/sqlite) · bcrypt · pquerna/otp (TOTP) · chzyer/readline (CLI) · Docker + Docker Compose</p>
+          </div>
+        </details>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / EDUCATION TIMELINE -->
+  <section class="section" id="experience">
+    <div class="section__head">
+      <p class="section__eyebrow">Experience</p>
+      <h2 class="section__title">Where I've been</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__date">June 2026</span>
+          <h3>Open Source Contributor, Docker</h3>
+          <p>
+            docker/docker-agent PR #3088 (Remote) — fixed a Windows path-expansion bug
+            by correcting <code>~</code> expansion to respect the <code>HOME</code>
+            environment variable instead of <code>USERPROFILE</code>, merged into
+            Docker main after maintainer review. Added test coverage for custom
+            <code>HOME</code> overrides on Windows to prevent regressions.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__date">Jun 2025 — Jul 2025</span>
+          <h3>Software Development Engineer Intern, Ultimez Technologies</h3>
+          <p>
+            Built CryptoTrack, a full-stack crypto tracker (React, Node.js) with live
+            API feeds, JWT authentication, and MongoDB-backed watchlists — cutting page
+            load time by 35%.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__date">Nov 2022 — Jul 2026</span>
+          <h3>B.Tech, Information Technology</h3>
+          <p>
+            KIET Group of Institutions (AKTU), Ghaziabad, India. CGPA 7.89/10.0.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section" id="achievements">
+    <div class="section__head">
+      <p class="section__eyebrow">Achievements</p>
+      <h2 class="section__title">Recognition</h2>
+    </div>
+    <div class="achievements__grid">
+      <div class="achievement-card achievement-card--stat">
+        <span class="achievement-card__num">10+</span>
+        <p>Full-stack &amp; backend systems projects on GitHub</p>
+      </div>
+      <div class="achievement-card">
+        <h3>IEEE Publication</h3>
+        <p>
+          Co-authored "A Hybrid Ensemble Machine Learning Approach for Early Detection
+          of Human Heart Disease," published in ICAICCIT, IEEE Xplore.
+        </p>
+      </div>
+      <div class="achievement-card">
+        <h3>Top 400 Nationally (Top 5%) — HackWithIndia</h3>
+        <p>
+          Ranked nationally among thousands of participants.
+        </p>
+      </div>
+      <div class="achievement-card">
+        <h3>Open Source — cli-printing-press</h3>
+        <p>
+          Merged PR #2900, fixing a Windows-specific CI failure in a public Go CLI
+          tool.
+        </p>
+      </div>
+      <div class="achievement-card">
+        <h3>Google Cloud Skills Boost Arcade</h3>
+        <p>
+          Completed the program — 40+ skill badges and 169 hands-on labs across Cloud
+          and DevOps tracks.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="section__head">
+      <p class="section__eyebrow">Certifications</p>
+      <h2 class="section__title">Certified in</h2>
+    </div>
+    <div class="achievements__grid achievements__grid--certs">
+      <div class="achievement-card">
+        <h3>AWS Certified Cloud Practitioner</h3>
+        <p>CLF-C02</p>
+      </div>
+      <div class="achievement-card">
+        <h3>Google Cloud Generative AI Fundamentals</h3>
+        <p>Certification</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="contact__box">
+      <p class="section__eyebrow">Contact</p>
+      <h2 class="section__title">Let's talk</h2>
+      <p class="contact__desc">
+        I'm an immediate joiner, actively interviewing for full-time SDE roles. If
+        there's a team you think I'd be a fit for, I'd love to hear from you.
+      </p>
+      <div class="contact__actions">
+        <a href="mailto:divyanshsrivastav.dev@gmail.com" class="btn btn--primary">divyanshsrivastav.dev@gmail.com</a>
+        <a href="assets/resume.pdf" class="btn btn--ghost" download>Download Resume</a>
+      </div>
+      <div class="contact__socials">
+        <a href="https://github.com/Divyansh670" target="_blank" rel="noopener" class="social-link">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.35-3.88-1.35-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.41-5.28 5.69.42.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/divyansh-srivastav" target="_blank" rel="noopener" class="social-link">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://leetcode.com/Divyansh_Srivastav" target="_blank" rel="noopener" class="social-link">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M13.98 2.2a1.37 1.37 0 0 0-1.94 0L6.6 7.64a3.4 3.4 0 0 0-.98 2.03 3.36 3.36 0 0 0 .93 2.68l5.06 5.16a1.37 1.37 0 1 0 1.96-1.92l-4.6-4.69 4.6-4.69 1.14 1.16a1.37 1.37 0 1 0 1.96-1.92L14.9 3.06l-.92-.86Zm-3.13 12.4a1.37 1.37 0 0 0-1.94 1.94l2.53 2.53a4.6 4.6 0 0 0 6.5 0l1.4-1.4a1.37 1.37 0 1 0-1.94-1.94l-1.4 1.4a1.86 1.86 0 0 1-2.62 0l-2.53-2.53Zm4.2-4.2h6.58a1.37 1.37 0 1 1 0 2.74h-6.58a1.37 1.37 0 1 1 0-2.74Z"/>
+          </svg>
+          <span>LeetCode</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built by Divyansh Srivastav · 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
